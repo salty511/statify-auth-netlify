@@ -34,7 +34,7 @@ router.get("/callback", (req, res) => {
         },
         headers: {
             "Authorization": "Basic " + (Buffer.from(
-                process.env.client_id + ":" + process.env.CLIENT_SECRET
+                process.env.CLIENT_ID + ":" + process.env.CLIENT_SECRET
             ).toString("base64"))
         },
         json: true
